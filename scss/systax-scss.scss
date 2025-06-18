@@ -1,0 +1,85 @@
+$spacing: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+);
+
+@each $key, $value in $spacing {
+  .p-#{$key} {
+    padding: $value;
+  }
+}
+
+// SCSS LEARNING
+// 1. Variable
+$primary-color: #443322;
+
+.use-variable {
+    background-color: $primary-color;
+}
+
+// 2. Loop
+$colors: (
+    primary: red,
+    secondary: blue,
+); // => this is map
+
+@each $name, $color in $colors {
+    .text-#{$name} {
+        color: $color;
+    }
+}
+
+@for $i from 1 through 5 {
+  .mt-#{$i} {
+    margin-top: $i * 4px;
+  }
+}
+// *NOTE: through bao gồm cả số cuối, to thì không.
+
+// 3. Condition
+$theme: light;
+
+body {
+  @if $theme == light {
+    background: white;
+  } @else {
+    background: black;
+  }
+}
+
+// 4. @mixin
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.use-mixin {
+    @include flex-center;
+}
+
+// 5. Function - @function
+// @function rem($px) {
+//   @return $px / 16 * 1rem;
+// }
+
+// .use-function {
+//     font-size: rem(24);
+// }
+
+// 6. Nội suy chuỗi – #{$var}
+$size: 4;
+.use-var-#{$size} {
+    padding: $size * 4px;
+}
+
+// 7. map-get() / map-merge() – Làm việc với map
+$spacing-xample: (
+    1: 0.25rem,
+    2: 0.5rem
+);
+
+.element {
+    padding: map-get($spacing-xample, 2);
+}

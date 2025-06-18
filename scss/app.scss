@@ -1,0 +1,16 @@
+@use "./reset.scss";
+@use "./global.scss";
+@use "./variables.scss";
+
+// @use "./tailwind.scss";
+// @use "./systax-scss.scss";
+
+// utilities
+@use "./utilities/index.scss";
+
+// layout
+@use "./layout/header.scss";
+
+// pages
+@use "./pages/home.scss";
+@use "./pages/contact.scss";

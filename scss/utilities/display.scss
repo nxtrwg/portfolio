@@ -1,0 +1,35 @@
+$display: (
+    none: none,
+    block: block,
+    flex: flex,
+    inline: inline,
+    inline-block: inline-block,
+);
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.none {
+    display: none;
+}
