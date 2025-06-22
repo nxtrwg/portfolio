@@ -1009,7 +1009,6 @@ ul, ol {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto 0;
-  padding: 0 80px 0;
   max-width: 1200px;
   width: 100%;
 }
@@ -1054,7 +1053,7 @@ ul, ol {
 }
 
 #footer .footer-container {
-  max-width: 960px;
+  max-width: 1200px;
   padding: 64px 0;
   margin: 0 auto;
 }
@@ -1112,10 +1111,12 @@ ul, ol {
 .section-title {
   position: sticky;
   top: 100px;
-  max-width: 230px;
+  max-width: 300px;
   font-size: 38px;
   font-weight: 700;
   color: #000000;
+  flex-shrink: 0;
+  width: 100%;
 }
 .section-title .accent {
   color: #667085;
@@ -1188,7 +1189,7 @@ ul, ol {
   position: relative;
 }
 .journey-section .journey-container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 64px;
@@ -1196,16 +1197,11 @@ ul, ol {
   justify-content: space-between;
   align-items: flex-start;
 }
-.journey-section .journey-container .journey-title {
-  background: white;
-  z-index: 10;
-  font-size: 28px;
-  font-weight: bold;
-  flex-shrink: 0;
-  width: 240px;
-}
 .journey-section .journey-container .journey-detail {
-  max-width: 646px;
+  max-width: 100;
+  flex: 1;
+  margin-left: 100px;
+  max-width: 1200px;
   width: 100%;
   font-size: 16px;
 }
@@ -1218,7 +1214,7 @@ ul, ol {
 }
 
 .work-section .work-container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 64px;
@@ -1227,7 +1223,9 @@ ul, ol {
   align-items: flex-start;
 }
 .work-section .work-container .work-detail {
-  max-width: 646px;
+  flex: 1;
+  margin-left: 100px;
+  max-width: 1200px;
   width: 100%;
   font-size: 16px;
 }
@@ -1298,7 +1296,7 @@ ul, ol {
 }
 
 .education-section .education-container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 64px;
@@ -1307,7 +1305,10 @@ ul, ol {
   align-items: flex-start;
 }
 .education-section .education-container .education-detail {
-  max-width: 646px;
+  max-width: 100;
+  flex: 1;
+  margin-left: 100px;
+  max-width: 1200px;
   width: 100%;
   font-size: 16px;
 }
@@ -1364,7 +1365,7 @@ ul, ol {
 }
 
 .skills-section .skills-container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 64px;
@@ -1373,7 +1374,10 @@ ul, ol {
   align-items: flex-start;
 }
 .skills-section .skills-container .skills-detail {
-  max-width: 646px;
+  max-width: 100;
+  flex: 1;
+  margin-left: 100px;
+  max-width: 1200px;
   width: 100%;
   font-size: 16px;
 }
