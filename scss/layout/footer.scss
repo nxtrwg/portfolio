@@ -1,0 +1,62 @@
+#footer {
+    .footer-container {
+        max-width: 960px;
+        padding: 64px 0;
+        margin: 0 auto;
+        .connect-container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding-bottom: 32px;
+            text-align: center;
+            .connect-logo {
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            .connect-title {
+                line-height: 56px;
+                font-size: 32px;
+                margin-top: 32px;
+            }
+
+            .connect-invite {
+                font-size: 18px;
+                color: #667085;
+                margin-top: 32px;
+            }
+
+            .connect-button {
+                padding: 12px 40px;
+                border: 1px solid #d0d5dd;
+                border-radius: 50rem;
+                margin-top: 32px;
+                display: inline-block;
+                .label {
+                    line-height: 24px;
+                    color: #344054;
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .footer-copyright {
+            font-size: 18px;
+            color: #667085;
+        }
+
+        .footer-socials {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            .social-item {
+                .social-link {
+                    .social-image {
+                        height: 24px;
+                        width: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
