@@ -999,6 +999,7 @@ ul, ol {
   top: 0;
   left: 0;
   transition: all 0.3s ease, backdrop-filter 0.3s ease;
+  z-index: 100;
 }
 #header.scrolled {
   padding: 20px 0;
@@ -1109,6 +1110,8 @@ ul, ol {
 }
 
 .section-title {
+  position: sticky;
+  top: 100px;
   max-width: 230px;
   font-size: 38px;
   font-weight: 700;
@@ -1181,6 +1184,9 @@ ul, ol {
   margin: 27px auto 0;
 }
 
+.journey-section {
+  position: relative;
+}
 .journey-section .journey-container {
   max-width: 960px;
   margin: 0 auto;
@@ -1188,6 +1194,15 @@ ul, ol {
   padding-bottom: 64px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+}
+.journey-section .journey-container .journey-title {
+  background: white;
+  z-index: 10;
+  font-size: 28px;
+  font-weight: bold;
+  flex-shrink: 0;
+  width: 240px;
 }
 .journey-section .journey-container .journey-detail {
   max-width: 646px;
@@ -1209,6 +1224,7 @@ ul, ol {
   padding-bottom: 64px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .work-section .work-container .work-detail {
   max-width: 646px;
@@ -1288,6 +1304,7 @@ ul, ol {
   padding-bottom: 64px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .education-section .education-container .education-detail {
   max-width: 646px;
@@ -1299,6 +1316,9 @@ ul, ol {
   border-radius: 10px;
   border: 1px solid #e4e7ec;
   margin-bottom: 34px;
+}
+.education-section .education-container .education-detail .education-card:last-child {
+  margin-bottom: 0;
 }
 .education-section .education-container .education-detail .education-card .education-identity {
   display: flex;
@@ -1350,6 +1370,7 @@ ul, ol {
   padding-bottom: 64px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .skills-section .skills-container .skills-detail {
   max-width: 646px;
