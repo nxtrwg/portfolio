@@ -54,6 +54,58 @@
                     .social-image {
                         height: 24px;
                         width: 24px;
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #footer {
+        .footer-container {
+            padding: 32px 16px;
+            .connect-container {
+                .connect-title {
+                    line-height: 2.25rem;
+                    margin-top: 16px;
+                }
+
+                .connect-invite {
+                    font-size: 14px;
+                    margin-top: 16px;
+                }
+
+                .connect-button {
+                    padding: 6px 20px;
+                    margin-top: 16px;
+                    .label {
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+
+            .footer-meta {
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+                gap: 16px;
+
+                .footer-copyright {
+                    font-size: 14px;
+                }
+            }
+
+            .footer-socials {
+                .social-item {
+                    .social-link {
+                        .social-image {
+                            height: 16px;
+                            width: 16px;
+                        }
                     }
                 }
             }

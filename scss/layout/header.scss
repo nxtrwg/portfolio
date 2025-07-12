@@ -63,3 +63,23 @@
         }
     }
 }
+
+@media screen and (max-width: 576px) {
+    #header {
+        padding: 10px 0;
+        .header-container {
+            .header-logo {
+            }
+
+            .header-menu {
+                display: none;
+                .menu-item {
+                }
+            }
+
+            .header-cta {
+                display: none;
+            }
+        }
+    }
+}

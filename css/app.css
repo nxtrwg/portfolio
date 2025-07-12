@@ -1052,6 +1052,17 @@ ul, ol {
   font-weight: 600;
 }
 
+@media screen and (max-width: 576px) {
+  #header {
+    padding: 10px 0;
+  }
+  #header .header-container .header-menu {
+    display: none;
+  }
+  #header .header-container .header-cta {
+    display: none;
+  }
+}
 #footer .footer-container {
   max-width: 1200px;
   padding: 64px 0;
@@ -1103,7 +1114,43 @@ ul, ol {
   height: 24px;
   width: 24px;
 }
+#footer .footer-container .footer-socials .social-item .social-link .social-image img {
+  height: 100%;
+  width: 100%;
+}
 
+@media screen and (max-width: 576px) {
+  #footer .footer-container {
+    padding: 32px 16px;
+  }
+  #footer .footer-container .connect-container .connect-title {
+    line-height: 2.25rem;
+    margin-top: 16px;
+  }
+  #footer .footer-container .connect-container .connect-invite {
+    font-size: 14px;
+    margin-top: 16px;
+  }
+  #footer .footer-container .connect-container .connect-button {
+    padding: 6px 20px;
+    margin-top: 16px;
+  }
+  #footer .footer-container .connect-container .connect-button .label {
+    font-size: 0.875rem;
+  }
+  #footer .footer-container .footer-meta {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+  #footer .footer-container .footer-meta .footer-copyright {
+    font-size: 14px;
+  }
+  #footer .footer-container .footer-socials .social-item .social-link .social-image {
+    height: 16px;
+    width: 16px;
+  }
+}
 #main {
   background-color: #fff;
 }
@@ -1143,6 +1190,7 @@ ul, ol {
 }
 .hero-section .hero-container .feature-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
   margin-top: 27px;
@@ -1408,6 +1456,78 @@ ul, ol {
   line-height: 18px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.02), 0 2px 10px 0 rgba(0, 0, 0, 0.06), 0 0 1px 0 rgba(0, 0, 0, 0.3);
   border-radius: 50rem;
+}
+
+@media screen and (max-width: 576px) {
+  .section-title {
+    font-size: 22px;
+    position: static;
+  }
+  .hero-section {
+    padding: 0 16px;
+  }
+  .hero-section .hero-container .hero-thumbnail {
+    width: 200px;
+    height: 200px;
+  }
+  .hero-section .hero-container .hero-name {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .hero-section .hero-container .hero-desc {
+    font-size: 14px;
+  }
+  .hero-section .hero-container .contact-btn {
+    padding: 6px 16px;
+    font-size: 14px;
+    margin: 16px auto 0;
+  }
+  .journey-section .journey-container {
+    padding: 32px 16px;
+    flex-direction: column;
+  }
+  .journey-section .journey-container .journey-detail {
+    margin-top: 16px;
+    margin-left: 0;
+    font-size: 14px;
+  }
+  .work-section .work-container {
+    padding: 32px 16px;
+    flex-direction: column;
+  }
+  .work-section .work-container .work-detail {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+  .work-section .work-container .work-detail .work-card {
+    gap: 16px;
+    flex-direction: column;
+  }
+  .work-section .work-container .work-detail .work-card .work-content .work-description {
+    font-size: 12px;
+  }
+  .education-section .education-container {
+    padding: 32px 16px;
+    flex-direction: column;
+  }
+  .education-section .education-container .education-detail {
+    margin-top: 16px;
+    margin-left: 0;
+  }
+  .education-section .education-container .education-detail .education-card .education-identity {
+    flex-direction: column;
+  }
+  .education-section .education-container .education-detail .education-card .education-content .education-description {
+    font-size: 12px;
+  }
+  .skills-section .skills-container {
+    padding: 32px 16px;
+    flex-direction: column;
+  }
+  .skills-section .skills-container .skills-detail {
+    margin-top: 16px;
+    margin-left: 0;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
