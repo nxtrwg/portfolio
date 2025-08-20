@@ -1,6 +1,6 @@
 #footer {
     .footer-container {
-        max-width: 1200px;
+        max-width: 75rem;
         padding: 64px 0;
         margin: 0 auto;
         .connect-container {
@@ -65,10 +65,17 @@
     }
 }
 
-@media screen and (max-width: 576px) {
+@media (min-width: 36rem) and (max-width: 78rem) {
     #footer {
         .footer-container {
             padding: 32px 16px;
+        }
+    }
+}
+
+@media (max-width: 36rem) {
+    #footer {
+        .footer-container {
             .connect-container {
                 .connect-title {
                     line-height: 2.25rem;

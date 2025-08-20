@@ -1009,7 +1009,7 @@ ul, ol {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto 0;
-  max-width: 1200px;
+  max-width: 75rem;
   width: 100%;
 }
 #header .header-container .header-logo {
@@ -1052,10 +1052,28 @@ ul, ol {
   font-weight: 600;
 }
 
-@media screen and (max-width: 576px) {
-  #header {
-    padding: 10px 0;
+@media (max-width: 800px) {
+  #header .header-container .header-cta {
+    display: none;
   }
+}
+@media (max-width: 78rem) {
+  #header {
+    padding: 10px 16px;
+  }
+  #header.scrolled {
+    padding: 20px 16px;
+  }
+}
+@media (min-width: 36rem) and (max-width: 78rem) {
+  #header {
+    padding: 10px 16px;
+  }
+  #header.scrolled {
+    padding: 20px 16px;
+  }
+}
+@media (max-width: 36rem) {
   #header .header-container .header-menu {
     display: none;
   }
@@ -1064,7 +1082,7 @@ ul, ol {
   }
 }
 #footer .footer-container {
-  max-width: 1200px;
+  max-width: 75rem;
   padding: 64px 0;
   margin: 0 auto;
 }
@@ -1119,10 +1137,12 @@ ul, ol {
   width: 100%;
 }
 
-@media screen and (max-width: 576px) {
+@media (min-width: 36rem) and (max-width: 78rem) {
   #footer .footer-container {
     padding: 32px 16px;
   }
+}
+@media (max-width: 36rem) {
   #footer .footer-container .connect-container .connect-title {
     line-height: 2.25rem;
     margin-top: 16px;
@@ -1172,7 +1192,7 @@ ul, ol {
 .hero-section {
   margin: 10px auto 0;
   padding: 0 82px 64px;
-  max-width: 1200px;
+  max-width: 75rem;
   width: 100%;
 }
 .hero-section .hero-container .hero-thumbnail {
@@ -1222,7 +1242,7 @@ ul, ol {
   margin-top: 16px;
 }
 .hero-section .hero-container .contact-btn {
-  display: block;
+  display: inline-block;
   padding: 16px 32px;
   font-size: 16px;
   font-weight: 600;
@@ -1237,7 +1257,7 @@ ul, ol {
   position: relative;
 }
 .journey-section .journey-container {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 64px;
@@ -1249,7 +1269,7 @@ ul, ol {
   max-width: 100;
   flex: 1;
   margin-left: 100px;
-  max-width: 1200px;
+  max-width: 75rem;
   width: 100%;
   font-size: 16px;
 }
@@ -1262,7 +1282,7 @@ ul, ol {
 }
 
 .work-section .work-container {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 64px;
@@ -1273,7 +1293,7 @@ ul, ol {
 .work-section .work-container .work-detail {
   flex: 1;
   margin-left: 100px;
-  max-width: 1200px;
+  max-width: 75rem;
   width: 100%;
   font-size: 16px;
 }
@@ -1344,7 +1364,7 @@ ul, ol {
 }
 
 .education-section .education-container {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 64px;
@@ -1356,7 +1376,7 @@ ul, ol {
   max-width: 100;
   flex: 1;
   margin-left: 100px;
-  max-width: 1200px;
+  max-width: 75rem;
   width: 100%;
   font-size: 16px;
 }
@@ -1413,7 +1433,7 @@ ul, ol {
 }
 
 .skills-section .skills-container {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 64px;
@@ -1425,7 +1445,7 @@ ul, ol {
   max-width: 100;
   flex: 1;
   margin-left: 100px;
-  max-width: 1200px;
+  max-width: 75rem;
   width: 100%;
   font-size: 16px;
 }
@@ -1458,7 +1478,17 @@ ul, ol {
   border-radius: 50rem;
 }
 
-@media screen and (max-width: 576px) {
+@media (min-width: 54rem) and (max-width: 78rem) {
+  .hero-section,
+  .journey-section,
+  .work-section,
+  .education-section,
+  .skills-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 54rem) {
   .section-title {
     font-size: 22px;
     position: static;
