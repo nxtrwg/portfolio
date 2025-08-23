@@ -1142,7 +1142,7 @@ ul, ol {
     padding: 32px 16px;
   }
 }
-@media (max-width: 36rem) {
+@media (max-width: 54rem) {
   #footer .footer-container .connect-container .connect-title {
     line-height: 2.25rem;
     margin-top: 16px;
@@ -1158,17 +1158,19 @@ ul, ol {
   #footer .footer-container .connect-container .connect-button .label {
     font-size: 0.875rem;
   }
+  #footer .footer-container .footer-meta .footer-copyright {
+    font-size: 14px;
+  }
+  #footer .footer-container .footer-meta .footer-socials .social-item .social-link .social-image {
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (max-width: 36rem) {
   #footer .footer-container .footer-meta {
     flex-wrap: wrap;
     flex-direction: column-reverse;
     gap: 16px;
-  }
-  #footer .footer-container .footer-meta .footer-copyright {
-    font-size: 14px;
-  }
-  #footer .footer-container .footer-socials .social-item .social-link .social-image {
-    height: 16px;
-    width: 16px;
   }
 }
 #main {
