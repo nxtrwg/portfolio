@@ -1112,8 +1112,6 @@ ul, ol {
   border-radius: 50rem;
   margin-top: 32px;
   display: inline-block;
-}
-#footer .footer-container .connect-container .connect-button .label {
   line-height: 24px;
   color: #344054;
   font-size: 1rem;
@@ -1154,8 +1152,6 @@ ul, ol {
   #footer .footer-container .connect-container .connect-button {
     padding: 6px 20px;
     margin-top: 16px;
-  }
-  #footer .footer-container .connect-container .connect-button .label {
     font-size: 0.875rem;
   }
   #footer .footer-container .footer-meta .footer-copyright {
