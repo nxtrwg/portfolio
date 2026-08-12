@@ -1319,6 +1319,18 @@ ul, ol {
   height: 100%;
   object-fit: contain;
 }
+.work-section .work-container .work-detail .work-card .work-content .work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+.work-section .work-container .work-detail .work-card .work-content .work-header .work-logo {
+  display: none;
+}
+.work-section .work-container .work-detail .work-card .work-content .work-company {
+  flex: 1;
+}
 .work-section .work-container .work-detail .work-card .work-content .work-name {
   font-size: 16px;
   font-weight: 700;
@@ -1329,9 +1341,11 @@ ul, ol {
   margin-top: 3px;
 }
 .work-section .work-container .work-detail .work-card .work-content .work-period {
-  font-size: 11px;
+  font-size: 12px;
   color: #98a2b3;
-  margin-top: 14px;
+  margin: 0;
+  white-space: nowrap;
+  text-align: right;
 }
 .work-section .work-container .work-detail .work-card .work-content .work-description {
   margin-top: 6px;
@@ -1476,6 +1490,14 @@ ul, ol {
   border-radius: 50rem;
 }
 
+@media (max-width: 78rem) {
+  .work-section .work-container .work-detail .work-card .work-logo {
+    display: none;
+  }
+  .work-section .work-container .work-detail .work-card .work-content .work-header .work-logo {
+    display: block;
+  }
+}
 @media (min-width: 54rem) and (max-width: 78rem) {
   .hero-section,
   .journey-section,
@@ -1484,6 +1506,14 @@ ul, ol {
   .skills-section {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  .work-section .work-container .work-detail .work-card .work-content .work-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .work-section .work-container .work-detail .work-card .work-content .work-header .work-logo {
+    display: block;
   }
 }
 @media (max-width: 54rem) {
@@ -1555,6 +1585,13 @@ ul, ol {
   .skills-section .skills-container .skills-detail {
     margin-top: 16px;
     margin-left: 0;
+  }
+}
+@media (max-width: 32rem) {
+  .work-section .work-container .work-detail .work-card .work-content .work-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
 }
 
